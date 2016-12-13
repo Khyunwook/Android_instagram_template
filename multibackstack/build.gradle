@@ -1,0 +1,17 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.github.jetradarmobile'
+
+android {
+  compileSdkVersion rootProject.ext.compileSdkVersion
+  buildToolsVersion rootProject.ext.buildToolsVersion
+
+  defaultConfig {
+    minSdkVersion 9
+  }
+}
+
+dependencies {
+  compile rootProject.ext.supportAppCompat
+}

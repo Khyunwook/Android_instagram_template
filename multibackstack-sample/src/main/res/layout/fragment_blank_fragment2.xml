@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jetradar.multibackstack.sample.BlankFragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+               >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="385dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/search_hori1"
+                        android:id="@+id/imageView16" />
+                    <ImageView
+                        android:layout_width="385dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/search_hori2"
+                        android:id="@+id/imageView17" />
+                    <ImageView
+                        android:layout_width="385dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/search_hori3"
+                        android:id="@+id/imageView18" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="580dp"
+                app:srcCompat="@drawable/search_ver1"
+                android:id="@+id/imageView19"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="0dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="610dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="0dp"
+                app:srcCompat="@drawable/search_ver2"
+                android:id="@+id/imageView20" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="638dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="0dp"
+                app:srcCompat="@drawable/search_ver3"
+                android:padding="0sp"
+                android:scaleType="centerCrop"
+                android:id="@+id/imageButton4" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>
